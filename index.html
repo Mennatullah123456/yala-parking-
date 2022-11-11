@@ -1,0 +1,792 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YallaParking</title>
+
+    <!-- Google / Search Engine Tags -->
+    <meta itemprop="name" content="YallaParking" />
+    <meta
+      itemprop="description"
+      content=" List Your Parking Space ... Join our growing community of over 700 parking spaces & start earning today. ... Rent an unused space from a neighbour in your building or area, OR, earn money renting yours out to a neighbour in need. "
+    />
+    <meta itemprop="image" content="imgs/banner.jpg" />
+
+      <meta
+      property="og:description"
+      content=" List Your Parking Space ... Join our growing community of over 700 parking spaces & start earning today. ... Rent an unused space from a neighbour in your building or area, OR, earn money renting yours out to a neighbour in need."
+    />
+    <meta property="og:image" content="imgs/banner.jpg" />
+
+    <!-- Twitter Meta Tags -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="YallaParking" />
+    <meta
+      name="twitter:description"
+      content=" List Your Parking Space ... Join our growing community of over 700 parking spaces & start earning today. ... Rent an unused space from a neighbour in your building or area, OR, earn money renting yours out to a neighbour in need."
+    />
+    <meta name="twitter:image" content="imgs/banner.jpg" />
+
+    <!-- FavIcon for browser -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="imgs/favicon/favicon-32x32.png"
+    />
+
+    <!-- Add website as an Icon on Iphone home screen -->
+    <link rel="apple-touch-icon" sizes="180x180" href="imgs/logo.png" />
+
+    <!-- Add website as an Icon on andriod home screen -->
+    <link rel="manifest" href="site.webmanifest" />
+
+    <!--jquery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"
+      integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css"
+      integrity="sha512-UTNP5BXLIptsaj5WdKFrkFov94lDx+eBvbKyoe1YAfjeRPC+gT5kyZ10kOHCfNZqEui1sxmqvodNUx3KbuYI/A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <!-- Bootstrap5 -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css
+    "
+    />
+
+    <!-- Bootsrap ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+    />
+
+    <!-- Link CSS style sheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="shadow-sm navbar navbar-expand-lg py-3 fixed-top bg-white">
+      <div class="container nav-container">
+        <a href="#"
+          ><img
+            class="navbar-brand"
+            src="imgs/logo.png"
+            alt="yalaparking logo"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navmenu">
+          <ul class="navbar-nav nav-left">
+            <li class="nav-item">
+              <a href="#" class="nav-link me-5">Parking Operators</a>
+            </li>
+            <li class="nav-item">
+              <a href="#" class="nav-link">Download Our App</a>
+            </li>
+          </ul>
+
+          <ul class="navbar-nav nav-right">
+            <li class="nav-item">
+              <button
+                class="login-btn"
+                data-bs-toggle="modal"
+                data-bs-target="#enroll"
+              >
+                <a href="#" class="nav-link">
+                  <i class="bi bi-box-arrow-in-right"></i> Log In</a
+                >
+              </button>
+            </li>
+
+            <li class="nav-item"><a href="#" class="nav-link">Register</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Main Section -Map- -->
+    <div style="width: 100%"><iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=Dubai.jumera+(Yalaparking)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"><a href="https://www.gps.ie/sport-gps/">hiking gps</a></iframe></div>
+
+   <br />
+    <small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;aq=0&amp;oq=twitter&amp;sll=28.659344,-81.187888&amp;sspn=0.128789,0.264187&amp;ie=UTF8&amp;hq=Twitter,+Inc.,+Market+Street,+San+Francisco,+CA&amp;t=m&amp;z=15&amp;iwloc=A"></a></small>
+    <form class="form-subscribe" id="contactForm" data-sb-form-api-token="API_TOKEN">
+        <!-- Email address input-->
+        <div class="row" style="margin-top: -10em;">
+            <div class="col" >
+                <input class="form-control form-control-lg ml-5" style="width: 75%;  " type="text" placeholder="Where would you like to park? " />
+                
+            </div>
+            <div class="col-auto"><button class="btn btn-warning btn-lg mr-0" id="submitButton" type="submit">Search</button></div>
+        </div>
+</div>
+                                 <!-- Scroll Enabling Button -->
+<a href="#" id="scrollEnabling" title="Enable or disable scrolling on map">Enable Scrolling</a>
+</div>
+
+    <!-- How it work -->
+    <section class="how-section">
+      <div class="container">
+        <h3 class="text-center mb-4 section-title">
+          Don't waste your time looking for a place to park
+        </h3>
+        <p class="text-center mb-5 section-text">
+          Search our listings and find the perfect spot near your home or
+          office.
+        </p>
+        <div
+          class="row text-center p-5 d-flex align-items-center justify-content-center how-boxes m-auto"
+        >
+          <div
+            class="box col how-box d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="mb-4 how-img"
+              src="imgs/howitwork/mapIllustration@2x.png"
+              alt="map illustration"
+            />
+            <p class="how-title mb-3">Search For Parking</p>
+            <p class="how-text fs-6">
+              Search more than 700 parking spaces across Dubai
+            </p>
+          </div>
+
+          <div
+            class="box col how-box d-flex flex-column justify-content-center align-items-center"
+          >
+            <img
+              class="mb-4 how-img"
+              src="imgs/howitwork/bookIllustration@2x.png"
+              alt="mobile app illustration"
+            />
+            <p class="how-title mb-3">Book Parking</p>
+            <p class="how-text fs-6">
+              Book & Pay online using our secure booking system.
+            </p>
+          </div>
+
+          <div
+            class="box col how-box d-flex flex-column justify-content-around align-items-center"
+          >
+            <img
+              class="mb-4 how-img"
+              src="imgs/howitwork/carIllustration@2x.png"
+              alt="mobile app illustration"
+            />
+            <p class="how-title mb-3">Park Your Car</p>
+            <p class="how-text fs-6">
+              Receive your access card in 24 hours & park. It really is that
+              simple.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partners -->
+    <section class="partners">
+      <div class="container">
+        <h3 class="text-center mb-4 section-title">Our Parking Partners</h3>
+        <p class="section-text text-center mb-5">
+          We are proudly partnered with the following companies
+        </p>
+
+        <div
+          class="partners-slider d-flex align-items-center justify-content-center"
+        >
+          <img
+            class="partners-img"
+            src="imgs/partners/HomeToHome.png"
+            alt="Home To Home logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/mag.png"
+            alt="Mag logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/NationalCarParks.png"
+            alt="National car parks logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/deyaar.png"
+            alt="Deyaar logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/doubletree.png"
+            alt="Double tree logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/dubizzle.png"
+            alt="Dubizzle logo"
+          />
+          <img
+            class="partners-img"
+            src="imgs/partners/intrecontinental.png"
+            alt="Intercontinertal logo"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Parking Hot spots -->
+
+    <section class="park-spots">
+      <div>
+        <h3 class="text-center mb-4 section-title">Popular Places in Dubai</h3>
+        <p class="text-center mb-5 section-text">Dubai Parking Hot Spots</p>
+        <div class="spot-slider">
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/barshaheights.png"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">Barsha Heights</p>
+              <p class="lead spot-text text-white">
+                Find Parking in Barsha Heights Dubai.
+              </p>
+            </div>
+          </div>
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/dubai-1367094_1280.jpg"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">DIFC</p>
+              <p class="lead spot-text text-white">
+                Find Parking in Dubai Internaional Finical Center.
+              </p>
+            </div>
+          </div>
+
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/SZR.jpg"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">Sheikh Zayed Road</p>
+              <p class="lead spot-text text-white">
+                Find Parking near Sheikh Zayed Road Dubai.
+              </p>
+            </div>
+          </div>
+
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/category-box-01.jpg"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">Jumerirah Lake Towers</p>
+              <p class="lead spot-text text-white">
+                Find Parking in Jumerirah Lake Towers.
+              </p>
+            </div>
+          </div>
+
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/DubaiMarina.jpg"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">Dubai Marina</p>
+              <p class="lead spot-text text-white">
+                Find Parking in Dubai Marina.
+              </p>
+            </div>
+          </div>
+
+          <div class="spot-card position-relative">
+            <figure class="gallery-item">
+              <img
+                class="spot-img"
+                src="imgs/hotspots/category-box-05.jpg"
+                alt="DIFC dubai"
+              />
+            </figure>
+            <div class="spot-content position-absolute ps-4">
+              <p class="h6 spot-title text-white">Downtown</p>
+              <p class="lead spot-text text-white">
+                Find Parking in Downtown Dubai
+              </p>
+            </div>
+            <div class="overlay"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testamonials -->
+    <section class="Testimonials">
+      <div class="container">
+        <div class="text-center main-title m-auto">
+          <h3 class="mb-4 section-title">Our Community</h3>
+          <p class="text-center mb-3 section-text">
+            It's always good to hear what others think, check out these reviews
+            from the awesome users & business partners we work with!
+          </p>
+        </div>
+
+        <div class="testimonials-slider">
+          <div>
+            <div class="testamonials-card">
+              <p class="info text-white">
+                Much needed service for Dubai. Easy to use. Great customer
+                service.
+              </p>
+            </div>
+
+            <div class="card-attach position-relative">
+              <img
+                class="rounded-circle position-absolute start-50 testimonials-img position-absolute"
+                src="https://static.generated.photos/vue-static/home/hero/4.png"
+                alt=""
+              />
+              <div class="arrow-down position-absolute"></div>
+              <p class="h6 testimonials-name position-absolute">
+                Stephanie Williams
+              </p>
+            </div>
+          </div>
+
+          <div>
+            <div class="testamonials-card">
+              <p class="info text-white">
+                With the summer heat in the 50's..outside parking wasn't an
+                option...voila YallaParking...In just a couple minutes I was
+                able to select my parking location online and received all
+                confirmation details via email...!!
+              </p>
+            </div>
+
+            <div class="card-attach position-relative">
+              <img
+                class="rounded-circle position-absolute start-50 testimonials-img position-absolute"
+                src="imgs/testimonials/MUNAD_AKBARI.jpg"
+                alt=""
+              />
+              <div class="arrow-down position-absolute"></div>
+              <p class="h6 testimonials-name position-absolute">Munad Akbari</p>
+            </div>
+          </div>
+
+          <div>
+            <div class="testamonials-card">
+              <p class="info text-white">
+                Thank you YallaParking for easing my parking woes in Business
+                Bay. You lot are stars!
+              </p>
+            </div>
+
+            <div class="card-attach position-relative">
+              <img
+                class="rounded-circle position-absolute start-50 testimonials-img position-absolute"
+                src="imgs/testimonials/ZAK_ILDUCELIBIA.jpg"
+                alt=""
+              />
+              <div class="arrow-down position-absolute"></div>
+              <p class="h6 testimonials-name position-absolute">
+                Zak Ilducelibia
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured in -->
+    <section class="features p-5">
+      <div class="container">
+        <h4 class="text-center section-title mb-4 p-3">As featured in</h4>
+        <div class="imgs-holder m-auto p-3">
+          <img
+            class=""
+            src="https://www.yallaparking.com/Content/img/logos/IncArabia.png"
+            alt=""
+          />
+          <img
+            class=""
+            src="https://www.yallaparking.com/Content/img/logos/Entrepreneur.png"
+            alt=""
+          />
+          <img
+            class=""
+            src="https://www.yallaparking.com/Content/img/logos/TheNational.png"
+            alt=""
+          />
+          <img
+            class=""
+            src="https://www.yallaparking.com/Content/img/logos/wamda.png"
+            alt=""
+          />
+          <img
+            class=""
+            src="https://www.yallaparking.com/Content/img/logos/Dubaieye.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Section How -->
+    <div class="How p-5 pb-2">
+      <div class="text-center how-content m-auto">
+        <h2 class="section-title mb-4">How Listing Works</h2>
+        <p class="section-text">
+          Help out a neighbour in need by easily adding your parking space. We
+          take care of the access cards, deposits, confirmation & payments.
+        </p>
+      </div>
+      <div class="container text-center pt-5 m-auto how-description">
+        <div class="row">
+          <div class="box col-12 col-sm-4">
+            <i class="bi bi-map how-icon"></i>
+            <h5 class="mb-4 mt-4 how-title">List Parking</h5>
+            <p class="how-text">Add your unused space & choose a price.</p>
+          </div>
+          <div class="box col-12 col-sm-4">
+            <i class="bi bi-key how-icon"></i>
+            <h5 class="mb-4 mt-4">Confirm</h5>
+            <p>
+              Confirm a convenient time for one of our team to pick up your
+              access card when you receive a booking.
+            </p>
+          </div>
+          <div class="box col-12 col-sm-4">
+            <i class="bi bi-cash-coin how-icon"></i>
+            <h5 class="mb-4 mt-4">Earn</h5>
+            <p>
+              Earn money each Month from your unused space, deposited directly
+              to your account.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Parking Space -->
+    <div class="parking">
+      <div class="container">
+        <h2 class="mb-4">List Your Parking Space</h2>
+        <p class="mb-3">
+          Join our growing community of over 700 parking spaces & start earning
+          today.
+        </p>
+        <button type="button" class="btn rounded-pill">
+          Let's Get Started
+        </button>
+      </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="pt-5">
+      <div class="container footer-container pt-3 pb-5">
+        <div
+          class="flex-sm-nowrap flex-wrap d-flex footer-flex justify-content-between"
+        >
+          <div class="left">
+            <a href="" class="logo mb-4"
+              ><img class="footer-logo" src="imgs/footer/logo.png" alt=""
+            /></a>
+            <p class="footer-left-text">
+              Rent an unused space from a neighbour in your building or area,
+              OR, earn money renting yours out to a neighbour in need.
+            </p>
+          </div>
+          <div class="right d-flex row mb-sm-4">
+            <div class="help-links col-sm">
+              <p class="footer-title fw-bold fs-5">Helpful Links</p>
+              <div class="d-flex help-links">
+                <div class="d-flex flex-column">
+                  <a href="#"> Log In</a>
+                  <a href="#"> Register</a>
+                  <a href="#"> About Us</a>
+                  <a href="#"> Commercial Partners</a>
+                </div>
+                <div class="d-flex flex-column help-links-2">
+                  <a href="#"> FAQs</a>
+                  <a href="#"> Terms & Conditions</a>
+                  <a href="#"> Cancellation & Refund </a>
+                </div>
+              </div>
+            </div>
+            <div class="contact col-sm mt-sm-4">
+              <p class="footer-title fw-bold fs-5">Contact US</p>
+              <div class="d-flex contact-links">
+                <div class="d-flex flex-column">
+                  <p>
+                    In5 Innovation Centre, Boutique Office Villa #7, Dubai Media
+                    City, Dubai, United Arab Emirates Phone: +971585772881
+                    E-Mail:
+                    <a class="footer-mail" href="hello@yallaparking.com">
+                      hello@yallaparking.com</a
+                    >
+                  </p>
+                  <div class="footer-social d-flex">
+                    <a href="#"> <i class="bi bi-facebook"></i></a>
+                    <a href="#"> <i class="bi bi-twitter"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!--  -->
+          </div>
+        </div>
+      </div>
+      <div class="bottom text-center pt-3 pb-3 position-relative container">
+        <p class="bottom-text">
+          © 2017 - 2022 Menna. All Rights Reserved.
+        </p>
+        <a href="" class="position-fixed bottom-0 start-0 p-5">
+          <i class="bi bi-arrow-up-circle-fill h1 up-icon"></i>
+        </a>
+      </div>
+    </footer>
+
+    <!-- Modal -->
+    <div
+      class="modal fade text-dark"
+      id="enroll"
+      tabindex="-1"
+      aria-labelledby="enrollLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header ps-4">
+            <h5 class="modal-title" id="enrollLabel">Log In</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="mb-3 ps-4 pe-4">
+                <label for="email" class="col-form-label">Email Address:</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  name="email"
+                  placeholder="Email address"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 ps-4 pe-4">
+                <label for="psw" class="col-form-label">Password:</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="psw"
+                  name="password"
+                  minlength="8"
+                  placeholder="password"
+                  required
+                />
+              </div>
+
+              <div class="mb-3 ps-4">
+                <input
+                  type="checkbox"
+                  class="remember"
+                  id="rememberMe"
+                  value="LsRememberME"
+                />
+                <label for="rememberMe" class="col-form-label"
+                  >Remember me</label
+                >
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer pe-5 d-flex flex-column align-items-start">
+            <button
+              type="button"
+              id="submit"
+              name="submit"
+              value="login"
+              class="modal-btn"
+            >
+              Login
+            </button>
+            <p>
+              <a
+                href="https://www.yallaparking.com/account/forgottenpassword"
+                class="forgot"
+                >Forgot your password?</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Google API -Map- -->
+    <script
+      async
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB3WsEDhj7jscuNH4fSNnnJyfjYp2RzDrs&callback=initMap"
+    ></script>
+
+    <!-- Link Jquery JS CDN  -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
+    <!-- Slick Slider -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+      integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Owl Carousel -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"
+      integrity="sha512-gY25nC63ddE0LcLPhxUJGFxa2GoIyA5FLym4UJqHDEMHjp8RET6Zn/SHo1sltt3WuVtqfyxECP38/daUc/WVEA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- Bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js
+     "></script>
+
+    <!-- Firebase -->
+    <script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-app.js";
+      import {
+        getAuth,
+        signInWithEmailAndPassword,
+      } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-auth.js";
+
+      import {
+        getDatabase,
+        set,
+        ref,
+        update,
+      } from "https://www.gstatic.com/firebasejs/9.6.10/firebase-database.js";
+
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      const firebaseConfig = {
+        apiKey: "AIzaSyD9XHxZrdBAGXvhTMQwc_kn1criOZCUN6I",
+        authDomain: "yalaparking.firebaseapp.com",
+        projectId: "yalaparking",
+        storageBucket: "yalaparking.appspot.com",
+        messagingSenderId: "759938431904",
+        appId: "1:759938431904:web:1a0eb14af4425ea4c302c5",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const auth = getAuth();
+      const database = getDatabase(app);
+
+      submit.addEventListener("click", (e) => {
+        var email = document.getElementById("email").value;
+        var password = document.getElementById("psw").value;
+
+        // log in user
+        signInWithEmailAndPassword(auth, email, password)
+          .then((userCredential) => {
+            // Signed in
+            const user = userCredential.user;
+            // ...
+
+            // save log in details into real time database
+            var lgDate = new Date();
+            update(ref(database, "users/" + user.uid), {
+              last_login: lgDate,
+            })
+              .then(() => {
+                // Data saved successfully!
+                alert("user logged in successfully");
+              })
+              .catch((error) => {
+                // The write failed...
+                alert(error);
+              });
+          })
+          .catch((error) => {
+            const errorCode = error.code;
+            const errorMessage = error.message;
+            alert(errorMessage);
+          });
+      });
+    </script>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.13.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyCnGzYSoFsZAkWIS-L7U2q0fJy7hlAUf00",
+          authDomain: "yalap-7a895.firebaseapp.com",
+          projectId: "yalap-7a895",
+          storageBucket: "yalap-7a895.appspot.com",
+          messagingSenderId: "306860564401",
+          appId: "1:306860564401:web:fea863ac5760e1eaeca790"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
+
+    <!-- JS file-->
+    <script src="main.js"></script>
+  </body>
+</html>
